@@ -2,12 +2,12 @@
         {% for source in sources %}
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
             <a href='/articles/{{source.id}}'>
-              <h3 style="font-weight:bold">{{ source.name}}</h3>
+              <h2 style="font-weight:bolder">{{ source.name}}</h2>
             </a>
-            <h5 style="color:black">{{source.category.upper()}}</h5>
+            <h5 style="color:chartreuse">{{source.category.upper()}}</h5>
 
-            <div class="well" style="height:100px; background-color:whitesmoke">
-                <p style="font-weight:bold">{{ source.description|truncate(150)}}</p>
+            <div class="well" style="height:140px; background-color:whitesmoke">
+                <p style="font-weight:bolder">{{ source.description|truncate(150)}}</p>
             </div>
 
           </div>
@@ -18,15 +18,15 @@
 <!-- Display articles -->
 {% macro displayArticleList(article_list) %}
     {% for article in article_list %}
-    <!-- print source here -->
+    <!--display source -->
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-">
               <li class="well" style="list-style:none;background-color:whitesmoke;">
                   <a href="{{article.url}}"style="text-decoration:none;"></a>
-                    <h3 style="font-size:16px;color:#1100ff;">
+                    <h3 style="font-size:20px;color:#1100ff;">
                         {{article.title}}
                     </h3>
                      <p style="font-size:25px;">  Date: {{article.publishedAt[:10]}} </p>
-                    <p style="font-size:20px; color:black;">{{article.description|truncate(70)}}</p>
+                    <p style="font-size:25px; color:black;">{{article.description|truncate(70)}}</p>
                     <a href="{{ article.url }}" class="article-link" style="font-size:20px; color:#19c3c9;">View more...</a>
                     <img src='{{article.urlToImage}}' width="" height="" class="img-responsive">
 
