@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+<div class="container" style="margin-top:10px;">
+</div>
+
+    <div class="container">
+      <div class="row">
+        <ul>
+          {{ macro.displaySourcesList(news_sources)}}
+        </ul>
+      </div>
+    </div>
+{% endblock %}
