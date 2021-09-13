@@ -2,10 +2,10 @@ import urllib.request
 import json
 from .models import Sources, Articles
 
-# Getting the API KEY
+# Get  API KEY
 api_key = None
 
-# Getting the news base url
+# Get news base url
 base_url = None
 
 
@@ -94,9 +94,6 @@ def process_articles(article_list):
         urlToArticle = article_item.get('url')
         publishedAt = article_item.get('publishedAt')
 
-        # if publishedAt != None:
-        #     # Call publish_date_format method to convert date to a display-friendly format
-        #     #date_to_display = article_item.publish_date_format(publishedAt) (self, author, title, description, urlToImage, url):
         article_object = Articles(
             source, title, description, urlToImage, urlToArticle, publishedAt)
         article_results.append(article_object)
