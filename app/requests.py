@@ -3,7 +3,7 @@ import json
 from .models import Sources, Articles
 
 # Get  API KEY
-api_key = None
+api_key = '4076f971e66749f19122871dd39d185d'
 
 # Get news base url
 base_url = None
