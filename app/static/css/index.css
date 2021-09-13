@@ -1,3 +1,10 @@
 .navbar{
-    color: aquamarine;
+    background-color: yellow;
+}
+body{
+    background-color: black;
+}
+.navbar-brand{
+    color:black;
+    font-size: 2rem;
 }
