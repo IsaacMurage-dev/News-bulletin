@@ -3,7 +3,7 @@ import json
 from .models import Sources, Articles
 
 # Get  API KEY
-api_key = None
+api_key = '4076f971e66749f19122871dd39d185d'
 
 # Get news base url
 base_url = None
@@ -11,7 +11,7 @@ base_url = None
 
 def configure_request(app):
     global api_key, base_url, articles_base_url
-    api_key = app.config['NEWS_API_KEY']
+    api_key = '4076f971e66749f19122871dd39d185d'
     base_url = app.config['NEWS_API_BASE_URL']
     articles_base_url = app.config['NEWS_ARTICLES_BASE_URL']
 
