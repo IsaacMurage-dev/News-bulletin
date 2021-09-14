@@ -40,7 +40,7 @@ This is an Api application that enables users to get access to news bulletin all
 
 
 ## Deployment
-This is the live link to the project: 
+This is the live link to the project: <a href="https://news-aizo.herokuapp.com/ "> NEWS-BULLETIN</a>
 
 ## Known bugs
 No known bugs
