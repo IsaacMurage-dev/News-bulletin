@@ -1,5 +1,5 @@
 .navbar{
-    background-color: yellow;
+    background-color: chartreuse;
 }
 body{
     background-color: black;
@@ -7,4 +7,23 @@ body{
 .navbar-brand{
     color:black;
     font-size: 2rem;
+}
+.nav{
+    font-size: 2rem;
+}
+a{text-align: center;}
+/* .first{
+    align-items: center;
+    height: 200px;
+    width: 400px;
+} */
+.second{
+    align-items: center;
+    height: 200px;
+    width: 400px;
+}
+.third{
+    align-items: center;
+    height: 200px;
+    width: 400px;
 }
